@@ -30,7 +30,7 @@ public class ModEntityTypes {
     ENTITY_TYPES.put(entityType, new Identifier(Puppeteer.MODID, name));
     return entityType;
   }
-  //If you don't use it, use method instead.
+  //If you don't attributes, use this method instead.
   private static <T extends Entity> EntityType<T> create(String name, EntityType<T> entityType) {
     ENTITY_TYPES.put(entityType, new Identifier(Puppeteer.MODID, name));
     return entityType;
