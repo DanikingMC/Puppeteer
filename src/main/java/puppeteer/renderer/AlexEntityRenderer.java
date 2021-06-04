@@ -4,7 +4,7 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.util.Identifier;
-import puppeteer.entity.AlexEntity;
+import puppeteer.common.entity.AlexEntity;
 
 public class AlexEntityRenderer extends MobEntityRenderer<AlexEntity, PlayerEntityModel<AlexEntity>> {
 

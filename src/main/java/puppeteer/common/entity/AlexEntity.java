@@ -1,4 +1,4 @@
-package puppeteer.entity;
+package puppeteer.common.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.PathAwareEntity;

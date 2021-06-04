@@ -13,7 +13,7 @@ import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import puppeteer.common.Puppeteer;
-import puppeteer.entity.NPCEntity;
+import puppeteer.common.entity.NPCEntity;
 import puppeteer.renderer.SteveEntityRenderer;
 
 import java.util.LinkedHashMap;
