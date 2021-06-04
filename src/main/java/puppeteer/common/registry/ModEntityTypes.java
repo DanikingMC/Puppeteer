@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import puppeteer.common.Puppeteer;
 import puppeteer.common.entity.NPCEntity;
-import puppeteer.renderer.SteveEntityRenderer;
+import puppeteer.client.renderer.SteveEntityRenderer;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

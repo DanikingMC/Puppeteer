@@ -1,4 +1,4 @@
-package puppeteer.renderer;
+package puppeteer.client.renderer;
 
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.MobEntityRenderer;
