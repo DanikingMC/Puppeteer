@@ -16,6 +16,7 @@ public class AlexEntityRenderer extends MobEntityRenderer<AlexEntity, PlayerEnti
   @Override
   public Identifier getTexture(AlexEntity entity) {
     return new Identifier("minecraft", "textures/entity/cube/alex.png");
+    //this doesnt work, needs debugging. later we will use a tag for this, to determine which skin we need
   }
 
   // we take the model from PlayerEntity, and use that as our own model, so that we dont have to create our own
