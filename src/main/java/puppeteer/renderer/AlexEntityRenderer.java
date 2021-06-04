@@ -18,4 +18,5 @@ public class AlexEntityRenderer extends MobEntityRenderer<AlexEntity, PlayerEnti
     return new Identifier("minecraft", "textures/entity/cube/alex.png");
   }
 
+  // we take the model from PlayerEntity, and use that as our own model, so that we dont have to create our own
 }

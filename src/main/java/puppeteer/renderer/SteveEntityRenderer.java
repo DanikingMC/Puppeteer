@@ -18,4 +18,5 @@ public class SteveEntityRenderer extends MobEntityRenderer<SteveEntity, PlayerEn
     return new Identifier("minecraft", "textures/entity/cube/steve.png");
   }
   
+  // we take the model from PlayerEntity, and use that as our own model, so that we dont have to create our own
 }

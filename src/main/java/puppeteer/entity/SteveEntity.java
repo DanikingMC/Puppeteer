@@ -8,4 +8,5 @@ public class SteveEntity extends NPCEntity{
   public SteveEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
     super(entityType, world);
   }
+  // we have this class to be able to have 2 different models easily
 }

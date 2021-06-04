@@ -25,6 +25,9 @@ public class ModEntityTypes {
       new Identifier(Puppeteer.MODID, "steve_entity"), FabricEntityTypeBuilder
           .create(SpawnGroup.CREATURE, SteveEntity::new).dimensions(EntityDimensions.fixed(0.6f, 1.8f)).build());
 
+  // here we register the two entities. they are too big, its either the two
+  // values in EntityDimension, or the value 0.7 where we register the renderer
+
   public static void init() {
     FabricDefaultAttributeRegistry.register(ALEX_ENTITY, NPCEntity.createMobAttributes());
     FabricDefaultAttributeRegistry.register(STEVE_ENTITY, NPCEntity.createMobAttributes());
@@ -33,9 +36,11 @@ public class ModEntityTypes {
   public static void initClient() {
     EntityRendererRegistry.INSTANCE.register(STEVE_ENTITY, (dispatcher, context) -> {
       return new SteveEntityRenderer(dispatcher, new PlayerEntityModel<>(0.0F, false), 0.7F);
+      // we register the renderer. false makes the arms fat
     });
     EntityRendererRegistry.INSTANCE.register(ALEX_ENTITY, (dispatcher, context) -> {
       return new AlexEntityRenderer(dispatcher, new PlayerEntityModel<>(0.0F, true), 0.7F);
+      // we register the renderer. true makes the armes thin
     });
   }
 }
