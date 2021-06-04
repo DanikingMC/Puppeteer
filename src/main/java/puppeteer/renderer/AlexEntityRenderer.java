@@ -8,8 +8,7 @@ import puppeteer.entity.AlexEntity;
 
 public class AlexEntityRenderer extends MobEntityRenderer<AlexEntity, PlayerEntityModel<AlexEntity>> {
 
-  public AlexEntityRenderer(EntityRenderDispatcher entityRenderDispatcher, PlayerEntityModel<AlexEntity> entityModel,
-      float f) {
+  public AlexEntityRenderer(EntityRenderDispatcher entityRenderDispatcher, PlayerEntityModel<AlexEntity> entityModel, float f) {
     super(entityRenderDispatcher, entityModel, f);
   }
 
