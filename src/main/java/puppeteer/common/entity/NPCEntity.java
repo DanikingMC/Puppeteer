@@ -3,6 +3,7 @@ package puppeteer.common.entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 
 public class NPCEntity extends PathAwareEntity {
 
@@ -22,5 +23,6 @@ public class NPCEntity extends PathAwareEntity {
   public void tick() {
     super.tick(); //I knew they had a tick()!
   }
+
 
 }

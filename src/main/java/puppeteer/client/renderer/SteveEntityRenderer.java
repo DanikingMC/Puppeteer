@@ -21,7 +21,7 @@ public class SteveEntityRenderer extends MobEntityRenderer<NPCEntity, PlayerEnti
 
   @Override
   public Identifier getTexture(NPCEntity entity) {
-    return new Identifier("minecraft", "textures/entity/cube/steve.png");
+    return new Identifier("minecraft", "textures/entity/steve.png");
     //this doesnt work, needs debugging. later we will use a tag for this, to determine which skin we need
   }
   
