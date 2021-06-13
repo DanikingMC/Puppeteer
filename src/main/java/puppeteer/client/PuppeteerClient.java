@@ -1,15 +1,19 @@
 package puppeteer.client;
 
 import net.fabricmc.api.ClientModInitializer;
-import puppeteer.common.registry.ModEntityTypes;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import puppeteer.client.screen.gui.GuiNpc;
+import puppeteer.common.registry.ModEntityRenderers;
+import puppeteer.common.registry.ModScreenHandlers;
 
-
+@Environment(EnvType.CLIENT)
 public class PuppeteerClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
-      ModEntityTypes.initClient();
-      ModEntityTypes.init();
-      //ScreenRegistry.register(ModScreenHandlers.NPC_HANDLER, NPCScreen::new); <- Hopefully we don't need a handler anymore
-
+        ModEntityRenderers.initClient();
+        ScreenRegistry.register(ModScreenHandlers.NPC_HANDLER, GuiNpc::new);
     }
 }

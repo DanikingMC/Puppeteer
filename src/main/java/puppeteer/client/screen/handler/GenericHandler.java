@@ -1,21 +1,18 @@
 package puppeteer.client.screen.handler;
 
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 import org.jetbrains.annotations.Nullable;
+import puppeteer.client.screen.handler.util.NewHandler;
 
-public class GenericScreenHandler extends ScreenHandler {
+public class GenericHandler extends NewHandler {
 
-    protected GenericScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId, PlayerInventory playerInventory) {
+    protected GenericHandler(@Nullable ScreenHandlerType<?> type, int syncId, PlayerInventory playerInventory) {
         super(type, syncId);
 
         /*
          * Draws player inventory slots
-         * So we don't need to draw it every time
-         * we want to create a new Handler
          */
 
         int l;
@@ -29,12 +26,4 @@ public class GenericScreenHandler extends ScreenHandler {
             this.addSlot(new Slot(playerInventory, l, 8 + l * 18, 142));
         }
     }
-
-    //If false, you can't access the screen
-    @Override
-    public boolean canUse(PlayerEntity player) {
-        return true;
-    }
-
-
 }

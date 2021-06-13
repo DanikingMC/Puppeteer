@@ -2,27 +2,34 @@ package puppeteer.common.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldView;
 
 public class NPCEntity extends PathAwareEntity {
-
-  //----------Default NPCEntity class--------------------//
-  //this entity should have steve skin
-  //then we only need to extend this to create alex or someone else
 
   public NPCEntity(EntityType<? extends PathAwareEntity> entityType, World world) {
     super(entityType, world);
   }
 
-
-  // we will implement behavior here, so that the alex and steve npc always do the same stuff
-
-
   @Override
   public void tick() {
-    super.tick(); //I knew they had a tick()!
+    super.tick();
   }
 
+  @Override
+  public boolean shouldRenderName() {
+    return true;
+  }
+
+  @Override
+  public boolean isCustomNameVisible() {
+    return true;
+  }
+
+  @Override
+  public Text getDefaultName() {
+    return new TranslatableText("Steve");
+  }
 
 }

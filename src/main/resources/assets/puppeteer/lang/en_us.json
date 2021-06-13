@@ -1,3 +1,7 @@
 {
-  "item.puppeteer.puppeteer_wand": "Puppeteer Wand"
+  "item.puppeteer.puppeteer_wand": "Puppeteer Wand",
+  "puppeteer.npc_screen.title.name": "Rename your NPC",
+  "puppeteer.npc_screen_save": "Save",
+  "puppeteer.npc_screen_remove": "Delete",
+  "puppeteer.npc_screen_reset": "Reset"
 }

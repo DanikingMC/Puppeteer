@@ -7,9 +7,9 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 
 @Environment(EnvType.CLIENT)
-public class SpawnScreenButtons extends ButtonWidget {
+public class ModScreenButtons extends ButtonWidget {
     //I will use this class later
-    public SpawnScreenButtons(int x, int y, int width, int height, Text message, PressAction onPress) {
+    public ModScreenButtons(int x, int y, int width, int height, Text message, PressAction onPress) {
         super(x, y, width, height, message, onPress);
     }
 
